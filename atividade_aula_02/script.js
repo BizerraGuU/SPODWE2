@@ -44,11 +44,11 @@ btnCalc.addEventListener("click", function() {
     var resultHipotenusa = Math.sqrt(hipoAoQuadrado);
     resposta.innerHTML = `Hipotenusa do Triângulo Retângulo: ${resultHipotenusa}`;
 });
-
 // Final: Exercicio (c)
 
-// Inicio: Exercicio (d)
-// Final: Exercicio (d)
+/* Inicio: Exercicio (d)
+A função está escrita diretamente no HTML 
+Final: Exercicio (d) */
 
 // Inicio: Exercicio (e)
 // Final: Exercicio (e)

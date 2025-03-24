@@ -34,10 +34,17 @@
     <input type="numer" placeholder="Informe o segundo cateto">
     <button type="button" id="calculaHipotenusa">Calcular</button>
     <div id="resultadoCalc"></div>
-
     <!-- Final: Exercicio (c) -->
      
     <!-- Inicio: Exercicio (d) -->
+    <h3>d) Funções Anônimas e Dinâmicas: Mesma funcionalidade da questão anterior</h3>
+    <p>Conta presente no Código: h² = 10² + 5²</p>
+    <button type="button" onclick="alert('Hipotenusa = ' + hipotenusaCalc(10,5));">
+        Executar Função
+    </button>
+    <script>
+        const hipotenusaCalc = new Function("a", "b", "return Math.sqrt(a * a + b * b)")
+    </script>
     <!-- Final: Exercicio (d) -->
 
     <!-- Inicio: Exercicio (e) -->
