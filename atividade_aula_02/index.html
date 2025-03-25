@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula 02</title>
 </head>
 <body>
     <!-- Início: Exercicio (a) -->
     <h3>a) Função declarada (sintaxe ES5): Altere o tipo de fonte (font-family) de um texto</h3>
 
-    <p id="texto">No que diz respeito ao empenho, ao compromisso, ao esforço, à dedicação, não existe meio termo. Ou você faz uma coisa bem feita ou não faz.</p>
+    <p id="texto">
+        No que diz respeito ao empenho, ao compromisso, ao esforço, à dedicação, não existe meio termo. Ou você faz uma coisa bem feita ou não faz.
+    </p>
 
     <button type="button" class="mudarLetra">Padrão</button>
     <button type="button" class="mudarLetra">Courier</button>
@@ -19,7 +21,9 @@
     <!-- Início: Exercicio (b) -->
     <h3>b) Função declarada (sintaxe ES6): Altere o tamanho da fonte de um texto.</h3> 
 
-    <p id="textoDois">No que diz respeito ao empenho, ao compromisso, ao esforço, à dedicação, não existe meio termo. Ou você faz uma coisa bem feita ou não faz.</p>
+    <p id="textoDois">
+        No que diz respeito ao empenho, ao compromisso, ao esforço, à dedicação, não existe meio termo. Ou você faz uma coisa bem feita ou não faz.
+    </p>
 
     <button type="button" class="alterarTamanho">Padrao</button>
     <button type="button" class="alterarTamanho">Aumentar</button>
@@ -43,26 +47,72 @@
         Executar Função
     </button>
     <script>
-        const hipotenusaCalc = new Function("a", "b", "return Math.sqrt(a * a + b * b)")
+        const hipotenusaCalc = new Function("c1", "c2", "return Math.sqrt(c1 * c1 + c2 * c2)"); b
     </script>
     <!-- Final: Exercicio (d) -->
 
     <!-- Inicio: Exercicio (e) -->
+    <h3>e) Retorno de Objetos (array indexado): Retorne a cotação de um valor em reais para dólares e euros na mesma função.</h3>
+    <h4>Conversor de Moeda</h4>
+    <p>
+        1$ = R$5.76
+        <br>
+        1€ = R$6.23
+    </p>
+    
+    <input type="number" id="converte" placeholder="Valor em reais">
+    <button id="calcularConv">Converter</button>
+    <div id="resultadoConversao"></div>
     <!-- Final: Exercicio (e) -->
 
     <!-- Inicio: Exercicio (f) -->
+    <h3>f) Retorno de Objetos (array associativo): Mesma funcionalidade da questão anterior.</h3>
+    <h4>Conversor de Moeda</h4>
+    <p>
+        1$ = R$5.76
+        <br>
+        1€ = R$6.23
+    </p>
+    
+    <input type="number" id="converte2" placeholder="Valor em reais">
+    <button id="calcularConv2">Converter</button>
+    <div id="resultadoConversao2"></div>
     <!-- Final: Exercicio (f) -->
 
     <!-- Inicio: Exercicio (g) -->
+    <h3>g) Função Autoinvocada (sintaxe ES5): Calcule a raiz de um número com base em um radicando e um índice.</h3>
+    <h4>Calcular Raiz</h4>
+
+    <input id="radicando" placeholder="Valor do Radicando">
+    <input id="indice" placeholder="Valor do Índice">
+    <button id="calculaRaiz">Calcular Raiz</button>
+    <div id="respostaRaiz"></div>
     <!-- Final: Exercicio (g) -->
 
     <!-- Inicio: Exercicio (h) -->
+    <h3>h) Função Autoinvocada (sintaxe ES6): Mesma funcionalidade da questão anterio.</h3>
+    <h4>Calcular Raiz</h4>
+
+    <input id="radicando2" placeholder="Valor do Radicando">
+    <input id="indice2" placeholder="Valor do Índice">
+    <button id="calculaRaiz2">Calcular Raiz</button>
+    <div id="respostaRaiz2"></div>
     <!-- Final: Exercicio (h) -->
 
     <!-- Inicio: Exercicio (i) -->
+    <h3>i) Escopo de uma Função (com uso de var na variável dentro da função): Calcule o fatorial de um número.</h3> 
+    
+    <input id="fatorial" placeholder="Valor para o fatorial">
+    <button type="button" id="calcFat">Fatorar</button>
+    <div id="respostaFat"></div>
     <!-- Final: Exercicio (i) -->
 
     <!-- Inicio: Exercicio (j) -->
+    <h3>j) Escopo de uma Função (sem uso de var na variável dentro da função): Mesma funcionalidade da questão anterior.</h3> 
+    
+    <input id="fatorial2" placeholder="Valor para o fatorial">
+    <button type="button" id="calcFat2">Fatorar</button>
+    <div id="respostaFat2"></div>
     <!-- Final: Exercicio (j) -->
 
     <!-- Inicio: Exercicio (k) -->

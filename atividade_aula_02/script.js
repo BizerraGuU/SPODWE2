@@ -51,21 +51,96 @@ A função está escrita diretamente no HTML
 Final: Exercicio (d) */
 
 // Inicio: Exercicio (e)
+var valorDolar = Number(5.76);
+var valorEuro = Number(6.23);
+
+var btnConverte = document.querySelector("#calcularConv");
+var resultado = document.querySelector("#resultadoConversao");
+
+btnConverte.addEventListener("click", funcConverteMoeda);
+
+function funcConverteMoeda() {
+    var valorReal = Number(document.querySelector("#converte").value);
+    var moedasConvertidas = [(valorReal/valorDolar).toFixed(2), (valorReal/valorEuro).toFixed(2)];
+    valoresConvertidos = resultado.innerHTML = `Dólares: $${moedasConvertidas[0]} <br> Euros: €${moedasConvertidas[1]}`;
+    return valoresConvertidos;
+}
 // Final: Exercicio (e)
 
 // Inicio: Exercicio (f)
+var btnConv2 = document.querySelector("#calcularConv2");
+var res2 = document.querySelector("#resultadoConversao2");
+
+btnConv2.addEventListener("click", funcConverteMoeda2);
+
+function funcConverteMoeda2() {
+    var valorReal = Number(document.querySelector("#converte2").value);
+    var moedasConvertidas2 = {
+        moedaDolar: (valorReal/valorDolar).toFixed(2), //toFixed --> formata para apenas duas casas após a virgula
+        moedaEuro: (valorReal/valorEuro).toFixed(2)
+    }
+    valoresConvertidos2 = res2.innerHTML = `Dólares: $${moedasConvertidas2.moedaDolar} <br> Euros: €${moedasConvertidas2.moedaEuro}`;
+    return valoresConvertidos2;
+}
 // Final: Exercicio (f)
 
 // Inicio: Exercicio (g)
+var btnRaiz = document.querySelector("#calculaRaiz");
+var resRaiz = document.querySelector("#respostaRaiz");
+
+btnRaiz.addEventListener("click", function(){
+    (function() {
+        var radicando = Number(document.querySelector("#radicando").value);
+        var indice = Number(document.querySelector("#indice").value);
+        return resRaiz.innerHTML = `Resultado: ${Math.pow(radicando, (1 / indice))}`;
+    })();
+});
 // Final: Exercicio (g)
 
 // Inicio: Exercicio (h)
+var btnRaiz = document.querySelector("#calculaRaiz2");
+var resRaiz = document.querySelector("#respostaRaiz2");
+btnRaiz.addEventListener("click", function() {
+    (() => {
+        var radicando2 = Number(document.querySelector("#radicando2").value);
+        var indice2 = Number(document.querySelector("#indice2").value);
+        return resRaiz.innerHTML = `Resultado: ${Math.pow(radicando2, (1 / indice2))}`;
+    })();
+});
 // Final: Exercicio (h)
 
 // Inicio: Exercicio (i)
+var btnFat = document.querySelector("#calcFat");
+var resFat = document.querySelector("#respostaFat");
+
+btnFat.addEventListener("click", fatorialNumero)[0];
+
+function fatorialNumero(){
+    var numero = Number(document.querySelector("#fatorial").value);
+    var result = 1;
+    for (var i = 2; i <= numero; i++) {
+        result *= i;
+    }
+    return resFat.innerHTML = `Fatorial de ${numero} = ${result}`;
+}
 // Final: Exercicio (i)
 
 // Inicio: Exercicio (j)
+var btnFat2 = document.querySelector("#calcFat2");
+var resFat2 = document.querySelector("#respostaFat2");
+var numero2 = 0;  
+var result2 = 1;  
+
+btnFat2.addEventListener("click", fatorialNumero2);
+
+function fatorialNumero2() {
+    numero2 = Number(document.querySelector("#fatorial2").value); 
+    result2 = 1; 
+    for (var i = 2; i <= numero2; i++) {
+        result2 *= i;
+    }
+    resFat2.innerHTML = `Fatorial de ${numero2} = ${result2}`;
+}
 // Final: Exercicio (j)
 
 // Inicio: Exercicio (k)
