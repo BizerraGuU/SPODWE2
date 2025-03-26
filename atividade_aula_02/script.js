@@ -98,13 +98,13 @@ btnRaiz.addEventListener("click", function(){
 // Final: Exercicio (g)
 
 // Inicio: Exercicio (h)
-var btnRaiz = document.querySelector("#calculaRaiz2");
-var resRaiz = document.querySelector("#respostaRaiz2");
-btnRaiz.addEventListener("click", function() {
+var btnRaiz2 = document.querySelector("#calculaRaiz2");
+var resRaiz2 = document.querySelector("#respostaRaiz2");
+btnRaiz2.addEventListener("click", function() {
     (() => {
         var radicando2 = Number(document.querySelector("#radicando2").value);
         var indice2 = Number(document.querySelector("#indice2").value);
-        return resRaiz.innerHTML = `Resultado: ${Math.pow(radicando2, (1 / indice2))}`;
+        return resRaiz2.innerHTML = `Resultado: ${Math.pow(radicando2, (1 / indice2))}`;
     })();
 });
 // Final: Exercicio (h)
@@ -126,25 +126,29 @@ function fatorialNumero(){
 // Final: Exercicio (i)
 
 // Inicio: Exercicio (j)
-var btnFat2 = document.querySelector("#calcFat2");
-var resFat2 = document.querySelector("#respostaFat2");
-var numero2 = 0;  
-var result2 = 1;  
+var btnFat2 = document.querySelector("#botaoFat");
+var resFat2 = document.querySelector("#divFat"); 
+let numero2;
+let result2;
 
-btnFat2.addEventListener("click", fatorialNumero2);
+btnFat2.addEventListener("click", fatorialNumero2)[0];
 
-function fatorialNumero2() {
-    numero2 = Number(document.querySelector("#fatorial2").value); 
-    result2 = 1; 
-    for (var i = 2; i <= numero2; i++) {
+function fatorialNumero2(){
+    numero2 = Number(document.querySelector("#fat").value);
+    result2 = 1;
+    for (var i = 2; i <= numero; i++) {
         result2 *= i;
     }
-    resFat2.innerHTML = `Fatorial de ${numero2} = ${result2}`;
+    return resFat2.innerHTML = `Fatorial de ${numero2} = ${result2}`;
 }
+
+
 // Final: Exercicio (j)
 
-// Inicio: Exercicio (k)
-// Final: Exercicio (k)
+/* Inicio: Exercicio (k)
+Presente no html
+Final: Exercicio (k) */
 
-// Inicio: Exercicio (l)
-// Final: Exercicio (l)
+/*Inicio: Exercicio (l)
+Presente no html
+Final: Exercicio (l)*/

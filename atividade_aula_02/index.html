@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Aula 02</title>
 </head>
 <body>
@@ -110,15 +111,51 @@
     <!-- Inicio: Exercicio (j) -->
     <h3>j) Escopo de uma Função (sem uso de var na variável dentro da função): Mesma funcionalidade da questão anterior.</h3> 
     
-    <input id="fatorial2" placeholder="Valor para o fatorial">
-    <button type="button" id="calcFat2">Fatorar</button>
-    <div id="respostaFat2"></div>
+    <input id="fat" placeholder="Valor para o fatorial" type="number">
+    <button type="button" id="botaoFat">Fatorar</button>
+    <div id="divFat"></div>
     <!-- Final: Exercicio (j) -->
 
     <!-- Inicio: Exercicio (k) -->
+    <h3>k) Closures (função interna chamada dentro da função externa): A função externa deve definir o texto “Quem canta “ e a função interna deve concatenar este texto com “seus males espanta.”e mostrar o ditado completo em um alert.</h3> 
+    
+    <h4>Clousures</h4>
+    <button type="button" onclick="funcaoExterna()">Mostrar Ditado Completo</button>
+    <script>
+        function funcaoExterna() {
+        let inicio = "Quem canta ";
+
+        function funcaoInterna() {
+            let fim = "seus males espanta.";
+            alert(inicio + fim);
+        }
+
+        funcaoInterna();
+    }
+    </script>
     <!-- Final: Exercicio (k) -->
 
     <!-- Inicio: Exercicio (l) -->
+    <h3>l) Módulos: A aplicação deve ter os botões Maiúsculas e Minúsculas, sendo que cada botão deve converter todas as letras de um mesmo texto e exibi-lo em um alert.</h3>
+
+    <h4>Clousures</h4>
+    <p id="texto3">
+        No que diz respeito ao empenho, ao compromisso, ao esforço, à dedicação, não existe meio termo. Ou você faz uma coisa bem feita ou não faz.
+    </p>
+    <button type="button" onclick="funcaoConverteLetraMaiusculas()">Maiúsculas</button>
+    <button type="button" onclick="funcaoConverteLetraMinusculas()">Minúsculas</button>
+    
+    <script>
+        function funcaoConverteLetraMaiusculas() {
+            let texto = document.querySelector("#texto3").innerText; // Pegando o conteúdo do <p>
+            alert(texto.toUpperCase());
+        }
+    
+        function funcaoConverteLetraMinusculas() {
+            let texto = document.querySelector("#texto3").innerText; // Pegando o conteúdo do <p>
+            alert(texto.toLowerCase());
+        }
+    </script>
     <!-- Final: Exercicio (l) -->
 
 
